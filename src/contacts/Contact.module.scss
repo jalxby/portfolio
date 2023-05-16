@@ -2,7 +2,7 @@
 
 .contact {
   background-color: $bgColor;
-  padding: 10px;
+  padding: 20px;
 
   .contactContainer {
     display: flex;
@@ -34,6 +34,7 @@
       align-items: center;
       row-gap: 15px;
       width: 50%;
+      padding-bottom: 20px;
 
       input, textarea {
         width: 100%;
