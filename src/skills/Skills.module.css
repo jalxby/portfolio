@@ -1,6 +1,7 @@
 .skillsBlock {
-    background-color: darkseagreen;
+    background-color: #0f172a;
     padding: 10px;
+    min-height: 100vh;
 }
 
 .skillsContainer {
@@ -22,8 +23,7 @@
 
 @media screen and (max-width:650px){
     .skills{
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
 }
 

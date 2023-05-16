@@ -1,14 +1,16 @@
 import React from "react";
-import s from "./Main.module.css";
+import s from "./Main.module.scss";
 import c from "../common/styles/Container.module.css";
+import Heading from "../common/components/heading/Heading";
 
 export const Main = () => {
   return (
     <div className={s.mainBlock}>
-      <div className={c.container}>
+      <Heading title={"about me"} backTitle={"about"} />
+      <div className={`${s.container} ${c.container}`}>
         <div className={s.text}>
-          <span>Hi There!</span>
-          <h1>I'm Aleksander Jaroszewicz</h1>
+          Hi I'm
+          <span className={s.name}> Aleksander Jaroszewicz</span>
           <p>Frontend Developer</p>
         </div>
         <div className={s.photo}></div>
@@ -16,4 +18,3 @@ export const Main = () => {
     </div>
   );
 };
-

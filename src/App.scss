@@ -1,0 +1,41 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.App {
+
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  //--h5-text-opacity: 1;
+  //--p-text-opacity: 1;
+  //--bg-opacity: 0.05;
+}
+
+a {
+
+
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
+  color: $textColor;
+}
+
+h5 {
+  @include text($primaryFontFamily, 500, 18px, 1.5, $textColor);
+  word-break: break-word;
+}
+
+p {
+  @include text($primaryFontFamily, 400, 16px, 1.6, $pTextColor);
+}

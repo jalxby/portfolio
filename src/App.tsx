@@ -1,11 +1,11 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import { Header } from "./header/Header";
 import { Main } from "./main/Main";
 import { Skills } from "./skills/Skills";
 import { Projects } from "./projects/Projects";
 import { Hiring } from "./hiring/Hiring";
-import { Contacts } from "./contacts/Contacts";
+import { Contact } from "./contacts/Contact";
 import { Footer } from "./footer/Footer";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Skills />
       <Projects />
       <Hiring />
-      <Contacts />
+      <Contact />
       <Footer />
     </div>
   );

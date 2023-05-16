@@ -1,0 +1,36 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.mainBlock {
+    background-color: $bgColor;
+    padding: 10px;
+    min-height: 100vh;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.text, .photo {
+    max-width: 300px;
+    width: 100%;
+}
+
+.text {
+    @include text($primaryFontFamily, 700, 36px, 1.5, $textColor);
+    background-color: $bgSecondColor;
+    .name{
+        color: $primaryColor;
+    }
+}
+
+.photo {
+    height: 300px;
+    background-color: $bgSecondColor;
+}
