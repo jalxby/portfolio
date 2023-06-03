@@ -1,13 +1,12 @@
 import React from "react";
 import s from "./Main.module.scss";
-import c from "../common/styles/Container.module.css";
 import Heading from "../common/components/heading/Heading";
 
 export const Main = () => {
   return (
     <div className={s.mainBlock}>
       <Heading title={"about me"} backTitle={"about"} />
-      <div className={`${s.container} ${c.container}`}>
+      <div className={s.container}>
         <div className={s.text}>
           Hi I'm
           <span className={s.name}> Aleksander Jaroszewicz</span>

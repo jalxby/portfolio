@@ -2,35 +2,48 @@
 @import "src/common/styles/sass/mixins";
 
 .mainBlock {
-    background-color: $bgColor;
-    padding: 10px;
-    min-height: 100vh;
-
-}
-
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+  @include flex(column, flex-start, stretch, wrap);
+  background-color: $bgColor;
+  padding: 10px;
+  min-height: 100vh;
+  position: relative;
+  opacity: 0.95;
 
 
+  .container {
+    @include flex(row, space-between, center, wrap);
+    @include container();
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.97;
 
-.text, .photo {
-    max-width: 300px;
-    width: 100%;
-}
 
-.text {
-    @include text($primaryFontFamily, 700, 36px, 1.5, $textColor);
-    background-color: $bgSecondColor;
-    .name{
-        color: $primaryColor;
+    .text, .photo {
+      background-color: $bgSecondColor;
+      max-width: 300px;
+      width: 100%;
     }
+
+    .text {
+      padding: 10px;
+      @include text($primaryFontFamily, 700, 36px, 1.5, $textColor);
+
+      .name {
+        color: $primaryColor;
+      }
+    }
+
+    .photo {
+      height: 300px;
+    }
+  }
 }
 
-.photo {
-    height: 300px;
-    background-color: $bgSecondColor;
-}
+
+
+
+
