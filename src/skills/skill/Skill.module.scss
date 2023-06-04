@@ -3,29 +3,29 @@
 
 .skill {
   width: 250px;
-
   background-color: $bgSecondColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, _, center, _);
   text-align: center;
   border-width: 1px;
   border-color: $borderColor;
+  margin-bottom: 20px;
+  svg {
+    stroke: $primaryColor;
+    width: 100px;
+    height: 100px;
+  }
+
+  .title {
+    @include text($primaryFontFamily, 700, 25px, 1.5, $textColor);
+  }
+
+  .description {
+    padding: 10px;
+    color: $pTextColor;
+  }
 }
 
-.title {
-  @include text($primaryFontFamily, 700, 25px, 1.5, $textColor);
-}
 
-.icon {
-  height: 80px;
-  width: 80px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-}
 
-.description {
-  padding: 10px;
-  color: $pTextColor;
-}
+
+

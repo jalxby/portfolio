@@ -1,32 +1,23 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+@import "src/contact/Contact.module";
 
 .hiring {
   background-color: $bgSecondColor;
   padding: 20px;
 
-
   .hiringContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    @include container();
+    @include flex(column, flex-start, center, _);
     row-gap: 30px;
-    .title {
-      font-family: 'Radio Canada', sans-serif;
-      font-weight: 700;
-      color: #ffffff;
-      position: relative;
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-      display: block;
-      z-index: 10;
-      @media screen and (min-width: 774px) {
-        font-size: 36px;
-        line-height: 1.2;
-        span{
-          color: $primaryColor;
-        }
+
+    h2 {
+      @include title();
+
+      span {
+        color: $primaryColor;
       }
+
     }
   }
 }

@@ -1,23 +1,13 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
 .titleContainer {
   padding-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
   text-align: center;
 
-  .title {
-    font-family: 'Radio Canada', sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    position: relative;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    display: block;
-    z-index: 10;
-    @media screen and (min-width: 774px) {
-      font-size: 36px;
-      line-height: 1.2;
-    }
-  }
+  @include title();
 
   .underline {
     background-color: rgb(114 226 174/0.2);

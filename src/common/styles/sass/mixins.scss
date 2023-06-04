@@ -5,15 +5,35 @@
   line-height: $lineHeight;
   color: $color;
 }
-@mixin container(){
+
+@mixin container() {
   margin: 0 auto;
-  width:80%
+  width: 80%;
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@mixin flex($direction,$justifyContent,$alignItems,$wrap){
+@mixin flex($direction,$justifyContent,$alignItems,$wrap) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justifyContent;
   align-items: $alignItems;
   flex-wrap: $wrap;
+}
+
+@mixin title() {
+  font-family: 'Radio Canada', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+  z-index: 10;
+  @media screen and (min-width: 70px) {
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }

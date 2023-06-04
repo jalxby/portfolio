@@ -1,6 +1,6 @@
 import React from "react";
-import s from "./Main.module.scss";
 import Heading from "../common/components/heading/Heading";
+import s from "./Main.module.scss";
 
 export const Main = () => {
   return (

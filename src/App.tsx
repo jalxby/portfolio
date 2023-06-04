@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { Contact } from "./contacts/Contact";
+import { Contact } from "./contact/Contact";
 import { Footer } from "./footer/Footer";
 import { Header } from "./header/Header";
 import { Hiring } from "./hiring/Hiring";

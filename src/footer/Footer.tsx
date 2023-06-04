@@ -6,7 +6,7 @@ import { SocialItem } from "./socialitem/SocialItem";
 export const Footer = () => {
   return (
     <div className={s.footer}>
-      <div className={`${c.container} ${s.footerContainer}`}>
+      <div className={s.footerContainer}>
         <p>Aleksander Jaroszewicz</p>
         <div className={s.socialContainer}>
           <SocialItem href={"https://facebook.com"}>
