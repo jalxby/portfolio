@@ -1,12 +1,13 @@
 import React from "react";
-import "./App.scss";
-import { Contact } from "./contact/Contact";
-import { Footer } from "./footer/Footer";
-import { Header } from "./header/Header";
-import { Hiring } from "./hiring/Hiring";
-import { Main } from "./main/Main";
-import { Projects } from "./projects/Projects";
-import { Skills } from "./skills/Skills";
+import "src/scss/App.scss";
+import { Fade } from "react-awesome-reveal";
+import { Contact } from "./features/contact/Contact";
+import { Footer } from "./features/footer/Footer";
+import { Header } from "./features/header/Header";
+import { Hiring } from "./features/hiring/Hiring";
+import { Main } from "./features/main/Main";
+import { Projects } from "./features/projects/Projects";
+import { Skills } from "./features/skills/Skills";
 
 function App() {
   return (

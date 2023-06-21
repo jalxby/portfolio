@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+@import "features/contact/Contact.module";
+
+.hiring {
+  background-color: $bgSecondColor;
+  padding: 20px;
+
+  .hiringContainer {
+    @include container();
+    @include flex(column, flex-start, center, _);
+    row-gap: 30px;
+
+    h2 {
+      @include title();
+
+      span {
+        color: $primaryColor;
+      }
+
+    }
+  }
+}
+
+

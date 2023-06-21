@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins";
+
+.skill {
+  width: 250px;
+  background-color: $bgSecondColor;
+  @include flex(column, _, center, _);
+  text-align: center;
+  border-width: 1px;
+  border-color: $borderColor;
+  margin-bottom: 20px;
+  svg {
+    stroke: $primaryColor;
+    width: 100px;
+    height: 100px;
+  }
+
+  .title {
+    @include text($primaryFontFamily, 700, 25px, 1.5, $textColor);
+  }
+
+  .description {
+    padding: 10px;
+    color: $pTextColor;
+  }
+}
+
+
+
+
+

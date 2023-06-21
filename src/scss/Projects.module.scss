@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+
+.projectsBlock {
+  background-color: $bgColor;
+  width: 100%;
+  padding-bottom: 20px;
+  opacity: 0.95;
+  .container{
+    @include container();
+  }
+
+  .projects {
+    width: 100%;
+    @include flex(row, space-between, flex-start,wrap);
+
+    @media screen and (max-width: 1280px) {
+      justify-content: center;
+    }
+  }
+}
+
+
+
+
+
