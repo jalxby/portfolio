@@ -1,7 +1,6 @@
+import Button from "common/components/button/Button";
 import React from "react";
-import s from "src/features/hiring/Hiring.module.scss";
-import c from "../common/styles/Container.module.css";
-import Button from "src/common/components/button/Button";
+import s from "scss/Hiring.module.scss";
 
 export const Hiring = () => {
   return (

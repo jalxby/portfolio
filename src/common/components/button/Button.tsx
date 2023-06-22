@@ -1,12 +1,15 @@
 import React, { ComponentProps } from "react";
+import { Fade } from "react-awesome-reveal";
 
 type PropsType = ComponentProps<"a">;
 
 const Button = ({ title, ...rest }: PropsType) => {
   return (
-    <a {...rest} className={"btnPrimary"}>
-      <span>{title}</span>
-    </a>
+    <Fade>
+      <a {...rest} className={"btnPrimary"}>
+        <span>{title}</span>
+      </a>
+    </Fade>
   );
 };
 

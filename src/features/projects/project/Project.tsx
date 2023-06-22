@@ -1,5 +1,5 @@
 import React from "react";
-import s from "src/features/projects/project/Project.module.scss";
+import s from "scss/Project.module.scss";
 
 type PropsType = {
   title: string;

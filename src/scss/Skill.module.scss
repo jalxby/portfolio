@@ -2,7 +2,7 @@
 @import "mixins";
 
 .skill {
-  width: 250px;
+  width: 150px;
   background-color: $bgSecondColor;
   @include flex(column, _, center, _);
   text-align: center;

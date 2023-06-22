@@ -1,10 +1,9 @@
+import Heading from "common/components/heading/Heading";
+import { Project } from "features/projects/project/Project";
 import React from "react";
-import s from "src/features/projects/Projects.module.scss";
-import c from "../common/styles/Container.module.css";
-import { Project } from "src/features/projects/project/Project";
-import Heading from "src/common/components/heading/Heading";
-import todolist from "src/assets/images/todolist.jpg";
-import snetwork from "src/assets/images/snetwork.webp";
+import s from "scss/Projects.module.scss";
+import todolist from "assets/images/todolist.jpg";
+import snetwork from "assets/images/snetwork.webp";
 
 export const Projects = () => {
   const socialStyle = {

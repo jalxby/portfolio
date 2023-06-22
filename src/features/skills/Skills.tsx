@@ -1,11 +1,11 @@
+import { CssLogo } from "assets/icons/CssLogo";
+import { HtmlLogo } from "assets/icons/HtmlLogo";
+import { ReactLogo } from "assets/icons/ReactLogo";
+import { ReduxLogo } from "assets/icons/ReduxLogo";
+import Heading from "common/components/heading/Heading";
+import { Skill } from "features/skills/skill/Skill";
 import React from "react";
-import { CssLogo } from "src/assets/icons/CssLogo";
-import { HtmlLogo } from "src/assets/icons/HtmlLogo";
-import { ReactLogo } from "src/assets/icons/ReactLogo";
-import { ReduxLogo } from "src/assets/icons/ReduxLogo";
-import Heading from "src/common/components/heading/Heading";
-import { Skill } from "src/features/skills/skill/Skill";
-import s from "src/features/skills/Skills.module.scss";
+import s from "scss/Skills.module.scss";
 
 export const Skills = () => {
   return (
