@@ -16,4 +16,8 @@ module.exports = {
     },
   },
   plugins: [],
+  corePlugins: {
+    // ...
+    "@layer utilities": {},
+  },
 };
