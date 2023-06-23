@@ -3,7 +3,6 @@ import React from "react";
 export const AxiosLogo = () => {
   return (
     <svg
-      stroke="currentColor"
       fill="#72E2AE"
       strokeWidth="0"
       role="img"
