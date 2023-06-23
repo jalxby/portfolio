@@ -11,6 +11,7 @@ export const NavItem: FC<PropsType> = ({ name, anchor, number }) => {
   return (
     <li className={s.item}>
       <Link
+        activeClass={s.linkAct}
         spy={true}
         className={s.link}
         to={anchor}

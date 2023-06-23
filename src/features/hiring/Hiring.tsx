@@ -4,7 +4,7 @@ import s from "scss/Hiring.module.scss";
 
 export const Hiring = () => {
   return (
-    <div className={s.hiring}>
+    <div className={s.hiring} id={"cv"}>
       <div className={s.hiringContainer}>
         <h2>
           Remote & relocation <span>ready</span>
