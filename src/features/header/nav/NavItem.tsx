@@ -1,18 +1,12 @@
 import React, { FC } from "react";
-import s from "scss/NavItem.module.scss";
-
+import s from "scss/UpdatedNav.module.scss";
 type PropsType = {
   name: string;
-  menuNumber: number;
 };
-export const NavItem: FC<PropsType> = ({ name, menuNumber }) => {
+export const NavItem: FC<PropsType> = ({ name }) => {
   return (
     <li className={s.item}>
-      <a
-        href={"#"}
-        className={s.link}
-        style={{ "--section-counter": menuNumber } as React.CSSProperties}
-      >
+      <a href={"#"} className={s.link}>
         {name}
         <span className={s.line}></span>
       </a>
