@@ -9,7 +9,7 @@ import s from "scss/Skills.module.scss";
 
 export const Skills = () => {
   return (
-    <div className={s.skillsBlock}>
+    <div className={s.skillsBlock} id={"skills"}>
       <div className={s.skillsContainer}>
         <Heading backTitle={"skills"} title={"my skills"} />
         <div className={s.skills}>

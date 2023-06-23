@@ -5,10 +5,9 @@ import s from "scss/Contact.module.scss";
 
 export const Contact = () => {
   return (
-    <div className={s.contact}>
+    <div className={s.contact} id={"contact"}>
       <div className={s.contactContainer}>
         <h2 className={s.title}>Contacts</h2>
-
         <form action="" className={s.contactForm}>
           <input />
           <input />

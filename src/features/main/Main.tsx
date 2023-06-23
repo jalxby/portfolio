@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 export const Main = () => {
   return (
-    <div className={s.mainBlock}>
+    <div className={s.mainBlock} id={"about"}>
       <Heading title={"about me"} backTitle={"about"} />
       <div className={s.container}>
         <div className={s.text}>

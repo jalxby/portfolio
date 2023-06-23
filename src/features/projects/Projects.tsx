@@ -15,7 +15,7 @@ export const Projects = () => {
   const description =
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
   return (
-    <div className={s.projectsBlock}>
+    <div className={s.projectsBlock} id={"projects"}>
       <div className={s.container}>
         <Heading title={"my projects"} backTitle={"projects"} />
         <div className={s.projects}>

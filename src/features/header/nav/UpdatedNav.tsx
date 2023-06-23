@@ -1,14 +1,13 @@
 import { NavItem } from "features/header/nav/NavItem";
 import React from "react";
-import s from "scss/UpdatedNav.module.scss";
 export const UpdatedNav = () => {
   return (
     <div>
-      <ul className={s.navigation}>
-        <NavItem name={"About"} />
-        <NavItem name={"Resume"} />
-        <NavItem name={"Projects"} />
-        <NavItem name={"Contact"} />
+      <ul className="flex align-middle gap-3">
+        <NavItem name={"About"} anchor={"about"} number={"01."} />
+        <NavItem name={"Skills"} anchor={"skills"} number={"02."} />
+        <NavItem name={"Projects"} anchor={"projects"} number={"03."} />
+        <NavItem name={"Contact"} anchor={"contact"} number={"04."} />
       </ul>
     </div>
   );
