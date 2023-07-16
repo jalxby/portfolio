@@ -31,11 +31,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: var(--font-family-primary), sans-serif;
+    font-family: "Arial Rounded MT Bold", sans-serif;
     line-height: var(--line-height-m);
     color: var(--color-light-100);
 
-    background-color: cornflowerblue;
+    background-color: #1d1b31;
   }
 
 `

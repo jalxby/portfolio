@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 
-import { Link, Menu, StyledBtn, SuperButton } from '@/components/styled'
+import { Link, Menu, StyledBtn } from '@/components/styled'
 
 export function App() {
   return (
@@ -19,11 +19,15 @@ export function App() {
         </ul>
       </Menu>
       <Box>
-        <StyledBtn as={Link} href={'https://google.com'}>
-          Link as Button
-        </StyledBtn>
-        <StyledBtn>Hello</StyledBtn>
-        <SuperButton>Hello</SuperButton>
+        {/*<StyledBtn as={Link} href={'https://google.com'}>*/}
+        {/*  Link as Button*/}
+        {/*</StyledBtn>*/}
+        {/*<StyledBtn>Hello</StyledBtn>*/}
+        {/*<SuperButton color={'red'}>Hello</SuperButton>*/}
+        {/*<SuperButton fontSize={'4rem'}>Hello</SuperButton>*/}
+        <StyledBtn btnType={'primary'}>Hello</StyledBtn>
+        <StyledBtn btnType={'outlined'}>Hello</StyledBtn>
+        <StyledBtn disabled>Disabled</StyledBtn>
       </Box>
     </div>
   )

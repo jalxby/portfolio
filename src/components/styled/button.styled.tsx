@@ -1,25 +1,56 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 
 import { StyledAnimation } from '@/styles/animations'
 
-export const StyledBtn = styled.button`
+type StyledBtnType = {
+  color?: string
+  fontSize?: string
+  btnType?: 'primary' | 'outlined'
+  disabled?: boolean
+}
+export const StyledBtn = styled.button<StyledBtnType>`
   border: none;
-  background-color: #535bf2;
   color: aliceblue;
   padding: 10px 20px;
-
-  font-size: 2rem;
+  border-radius: 5px;
+  font-size: ${props => props.fontSize || '2rem'};
   font-weight: bold;
 
-  &:hover {
-    background-color: cadetblue;
-    color: aliceblue;
-  }
+  ${props =>
+    props.btnType === 'primary' &&
+    css<StyledBtnType>`
+      color: aliceblue;
+      background-color: ${props => props.color || 'purple'};
+      border: 2px solid ${props => props.color || 'purple'};
+      &:hover {
+        background-color: transparent;
 
-  &:last-child {
-    background-color: gold;
-    color: darkslateblue;
-  }
+        color: ${props => props.color || 'purple'};
+      }
+    `}
+
+  ${props =>
+    props.btnType === 'outlined' &&
+    css<StyledBtnType>`
+      background-color: transparent;
+      border: 2px solid ${props => props.color || 'purple'};
+      color: ${props => props.color || 'purple'};
+      &:hover {
+        color: aliceblue;
+        background-color: ${props => props.color || 'purple'};
+      }
+    `}
+
+  ${props =>
+    props.disabled &&
+    css<StyledBtnType>`
+      background-color: inherit;
+      border: 2px solid gray;
+      color: gray;
+      &:hover {
+        cursor: initial;
+      }
+    `}
 `
 export const SuperButton = styled(StyledBtn)`
   border-radius: 5px;
