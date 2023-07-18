@@ -9,10 +9,6 @@ type StyledBtnType = {
   disabled?: boolean
 }
 export const StyledBtn = styled.button<StyledBtnType>`
-  border: none;
-  color: aliceblue;
-  padding: 10px 20px;
-  border-radius: 5px;
   font-size: ${props => props.fontSize || '2rem'};
   font-weight: bold;
 
